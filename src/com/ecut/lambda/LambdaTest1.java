@@ -1,4 +1,4 @@
-package com.ecut;
+package com.ecut.lambda;
 
 /**
  * @author Amy

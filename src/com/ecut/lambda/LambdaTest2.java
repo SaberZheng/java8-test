@@ -1,6 +1,6 @@
-package com.ecut;
+package com.ecut.lambda;
 
-import com.entity.Person;
+import com.ecut.entity.Person;
 
 import java.util.Arrays;
 import java.util.List;
