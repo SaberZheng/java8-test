@@ -54,7 +54,7 @@ public class OptionalTest1 {
         System.out.println("orElseGet方法不存在值，通过方法获取" + orElseNullGetRes.getFirstName());
 
         //map方法如果为空，返回一个空的Optional，如果不为空则根据入参获取到的结果生成一个新的Optional
-        Optional<String> mapRet = person.map(p -> p.getFirstName()).map(name -> name.toLowerCase());
+        Optional<String> mapRet = person.map(Person::getFirstName).map(String::toLowerCase);
         System.out.println("map方法不为空执行结果为：" + mapRet);
     }
 }
