@@ -16,12 +16,12 @@ public class MethodReferenceTest {
         U creat(int id, String name);
     }
 
-    static UserFactory<User> userFactory = User::new;
+    private static UserFactory<User> userFactory = User::new;
 
     public static void main(String[] args) {
         List<User> users = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            users.add(userFactory.creat(i, "user" + Integer.toString(i)));
+            users.add(userFactory.creat(i, "user" + i));
         }
         users.stream().map(User::getName).forEach(System.out::println);
     }
