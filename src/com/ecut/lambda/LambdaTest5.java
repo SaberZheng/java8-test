@@ -8,7 +8,7 @@ import java.util.function.IntConsumer;
  * @date 2019-07-03 18:45
  * @description:
  */
-public class LambdaTest5{
+public class LambdaTest5 {
     static int[] arr = {1, 2, 3, 4, 5};
 
     public static void main(String[] args) {
